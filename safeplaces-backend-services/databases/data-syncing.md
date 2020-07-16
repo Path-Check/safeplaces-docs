@@ -1,0 +1,10 @@
+# Syncing of Data Between Private and Public Databases
+
+Syncing of data between the public and private database occurs at two points in SafePlaces. Due to the various environments SafePlaces might be deployed in we are unable to implement any traditional database syncing schemes. As a result, syncing of data between the public and private databases occurs at runtime and follows the pattern of querying one database for data and inserting it into the other.
+
+## Organization Information Syncing
+The Ingest Service hosts an endpoint (`GET /organization/configuration?id={organization.external_id}`) that allows the PathCheck GPS mobile application to query information about a given health authority. After an organization admin has completed onboarding in the SafePlaces Frontend their organization will be assigned an external id (represented as the `external_id` field on the organizations table in the public and private databases) and all updates to the organization record will be committed to the private database. A new organization record will then be inserted into the public database with the same attributes as the corresponding record in the private database. These records are tied to one another through the shared value of their external id. Any updates to the organization in the public database will also be written to the public database.
+
+## Ingestion of GPS Data
+
+The translation service hosts an endpoint (`POST /case/points/ingest`) that reads GPS data from the public database (previously uploaded by a PathCheck GPS user) and writes it to the private database. The transferred GPS data is associated with a case record that exists in the private database. All relevant GPS data is then deleted from the public database. The newly transferred GPS data is then returned in the response payload to the SafePlaces Frontend where the contact tracer is able to modify the GPS points as needed in the contact tracing tool. All modifications to the points data past this point will be reflected in the private database.
