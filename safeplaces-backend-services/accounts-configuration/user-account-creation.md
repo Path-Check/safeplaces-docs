@@ -6,6 +6,7 @@ SafePlaces does not currently support the creation of users via the SafePlaces F
 
 1. Create a new user in Auth0 with a role value of one of the following:
 
+- `super_admin` - this role allows the user to create and manage other users' permissions within SafePlaces
 - `contact_tracer` - this role allows the user to create/update cases, modify GPS point data, and stage cases for publishing
 - `admin` - this role allows the user to carry out all action of a `contact_tracer`, configure their organization's settings, and publish case data
 
