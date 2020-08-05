@@ -2,7 +2,7 @@
 
 ## Overview
 
-Two databases are required in order to store data for the services that comprise the SafePlaces backend. The two databases implement their own schemas and should be deployed independently of one another. Information on how to setup and configure these databases can be found [here]().
+Two databases are required in order to store data for the services that comprise the SafePlaces backend. The two databases implement their own schemas and should be deployed independently of one another. Information on how to setup and configure these databases can be found [here](initial-setup.md).
 
 ### Motivation for Two Databases
 
