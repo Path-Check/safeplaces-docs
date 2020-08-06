@@ -24,7 +24,6 @@ Below are environment variables that need to be set in order to push published d
 
 - PUBLISH_STORAGE_TYPE - indicates the configured cloud storage provide (should be `gcs` for Google Cloud Storage or `aws` for Amazon S3)
 
-- GOOGLE_CLOUD_PROJECT - name of Google Cloud project (only needs to be set if PUBLISH_STORAGE_TYPE equals `gcs`)
 - GCLOUD_STORAGE_BUCKET - name of bucket to upload published location data to (only needs to be set if PUBLISH_STORAGE_TYPE equals `gcs`)
 - GCLOUD_STORAGE_PATH - folder of GCloud bucket to store published location data in (only needs to be set if PUBLISH_STORAGE_TYPE equals `gcs`)
 - GOOGLE_SECRET - path to file containing Google secret (only needs to be set if PUBLISH_STORAGE_TYPE equals `gcs`)
