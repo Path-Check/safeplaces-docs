@@ -29,7 +29,6 @@ Below are environment variables that need to be set in order to push published d
 - GOOGLE_SECRET - path to file containing Google secret (only needs to be set if PUBLISH_STORAGE_TYPE equals `gcs`)
 
 - S3_BUCKET - name of S3 bucket to publish location data to (only needs to be set if PUBLISH_STORAGE_TYPE equals `aws`)
-- S3_REGION - region of S3 bucket (only needs to be set if PUBLISH_STORAGE_TYPE equals `aws`)
 - S3_ACCESS_KEY - S3 access key (only needs to be set if PUBLISH_STORAGE_TYPE equals `aws`)
 - S3_SECRET_KEY - S3 secret key (only needs to be set if PUBLISH_STORAGE_TYPE equals `aws`)
 
