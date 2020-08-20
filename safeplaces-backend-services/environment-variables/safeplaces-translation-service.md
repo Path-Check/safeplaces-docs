@@ -1,4 +1,4 @@
-# SafePlaces Ingest Service Environment Variables
+# SafePlaces Translation Service Environment Variables
 
 Below are a list of the environment variables required for the SafePlaces Translation service to function correctly. The variables and their values should be present in a file named `.env` located in the top-level directory of the repo. An example of the `.env` file can be found [here](https://github.com/Path-Check/safeplaces-backend-translation/blob/master/.env.template).
 
