@@ -9,6 +9,6 @@ SafePlaces does not currently support the creation of organizations via the Safe
 
   `env $(cat .env) spdl seed:run --scope private --env development|staging|production`
 
-2. Create a new user with the `admin` role and associate it with the organization created by the seeds (see: user_account_creation.md)
+2. Create a new user with the `admin` role and associate it with the organization created by the seeds (see [user account creation overview](user-account-creation.md))
 
 3. Login into SafePlaces Frontend with the newly created user's credentials - you'll be prompted to configure the newly created organization
