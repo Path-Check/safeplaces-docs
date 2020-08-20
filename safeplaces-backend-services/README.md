@@ -86,3 +86,7 @@ More information on functionality can be found in the repo's README.
 ### [SafePlaces Server](https://github.com/Path-Check/safeplaces-backend-lib)
 
 #### Overview & Usage
+
+The SafePlaces Server library is a pre-built Express server used across all SafePlaces services.
+
+More information on functionality can be found in the repo's README.
