@@ -34,7 +34,7 @@ Below are environment variables that need to be set in order to push published d
 
 ### Authentication Related Environment Variables
 
-Below are environment variables that must be set in order to properly configure a connection to Auth0 to handle authentication and user management.
+Below are environment variables that must be set in order to properly configure a connection to Auth0 to handle authentication and user management. The user management and authentication APIs you've setup in Auth0 should use the same user database within Auth0 in order for user management and authentication functionality to work in synchrony.
 
 - AUTH_LOGOUT_REDIRECT_URL - URL for Auth0 to redirect to after a user logs out
 - AUTH0_BASE_URL - tenant url from Auth0 (https://auth0.com/docs/getting-started/the-basics)
