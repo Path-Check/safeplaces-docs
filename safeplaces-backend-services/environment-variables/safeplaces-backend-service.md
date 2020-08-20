@@ -45,6 +45,7 @@ Below are environment variables that must be set in order to properly configure 
 - AUTH0_CLIENT_ID - found in your Auth0 authorization application's settings page
 - AUTH0_CLIENT_SECRET - found in your Auth0 authorization application's settings page
 
+- AUTH0_MANAGEMENT_ENABLED - should be set to `true` and the below values set in order to enable the Auth0 management API
 - AUTH0_MANAGEMENT_API_AUDIENCE - name of Auth0 user management audience in Auth0
 - AUTH0_MANAGEMENT_CLIENT_SECRET - found in your Auth0 user management application's settings page
 - AUTH0_MANAGEMENT_CLIENT_ID - found in your Auth0 user management application's settings page
